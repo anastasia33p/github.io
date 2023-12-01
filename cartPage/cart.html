@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesCart.css">
+    <link rel="stylesheet" href="../mainstyle.css">
+</head>
+<body>
+<header>
+    <div>
+        <p class="m">M</p>
+        <p>яу</p>
+    </div>
+    <h1>ШОКОТАРИЙ</h1>
+    <section>
+        <a href="../mainPage/mainpage.html">О нас</a>
+        <a href="../historyPage/history.html">История фабрики</a>
+        <a href="../catalogPage/catalog.html">Каталог</a>
+        <a href="../cartPage/cart.html">Корзина</a>
+    </section>
+</header>
+<div class="container">
+    <div class="cat-container">
+        <img class="cat" src="../svg/cat_green_eyes_brown.svg" alt="КОТ В КОРЗИНЕ" width="500px">
+    </div>
+    <div id="block-container">
+        <div id="cart-container"></div>
+        <div class="vertical-palka"></div>
+        <div id="text-container">
+            <p>Итог</p>
+            <p id="productSum">Товары: </p>
+            <p id="deliverySum">Доставка: </p>
+            <div class="horisontal-palka"></div>
+            <p id="Sum">Итого: </p>
+            <div class="clear">
+                <button onclick="arrayClear()">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+    <form id="payForm" onsubmit="buy()">
+        <label for="gmail">Введите почту:</label>
+        <input type="email" id="gmail" placeholder="Почта">
+        <label for="cardNumber">Введите номер карты</label>
+        <input type="text" id="cardNumber" placeholder="Номер карточки:)" >
+        <button id="submitbutton" type="submit">Отправить много денег</button>
+    </form>
+
+</div>
+
+<footer>
+    <a href="../catalogPage/catalog.html" >Заказать</a>
+    <br> <a href="tel:+79134447478">Позвонить </a>
+    <br> <a href="mailto:anastasiablablabla@gmail.com">Написать</a>
+</footer>
+<script src="scriptsCart.js"></script>
+</body>
+</html>

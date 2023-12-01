@@ -1,0 +1,95 @@
+#productCard{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto 50% auto;
+    grid-template-areas: "image1 name1" "image1 text1" "image1 button1";
+}
+#productCard img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    grid-area: image1;
+}
+#productCard h2{
+    grid-area: name1;
+}
+#productCard p{
+    grid-area: text1;
+    margin-right: 2vw;
+}
+#productCard button{
+    width: 80%;
+    margin-top: 3vw;
+    margin-left: 10%;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: var(--glass-shadow);
+    background: var(--glass-background);
+    grid-area: button1;
+}
+.container > p{
+    margin-top: 100px;
+}
+#offer-container {
+    height: 22vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: var(--brown) var(--glass-background); /* Цвет ползунка и фона */
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: row;
+}
+#offer-container::-webkit-scrollbar {
+    width: 10px; /* Толщина скроллбара */
+}
+
+#offer-container::-webkit-scrollbar-thumb {
+    background-color: var(--glass-shadow); /* Цвет ползунка */
+    border-radius: 5px; /* Радиус закругления углов ползунка */
+}
+
+#offer-container::-webkit-scrollbar-track {
+    background-color: var(--glass-background); /* Цвет фона скроллбара */
+}
+.card {
+    height: 20vw;
+    width: 20vw;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow: var(--glass-shadow);
+    background: var(--glass-background);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    width: 15vw;
+    height: 15vw;
+}
+.card p{
+    width: 80%;
+    text-align: center;
+}
+.hidden-id{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card{
+        font-size: 10px;
+    }
+}
+
+    #offer-container{
+        height: 30vw;
+    }
+    .card{
+        height: 27vw;
+    }
+    .card img{
+        width: 13vw;
+        height: 13vw;
+    }

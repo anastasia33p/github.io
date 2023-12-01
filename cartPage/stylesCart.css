@@ -1,0 +1,86 @@
+#cart-container div{
+    display: flex;
+    justify-content: space-between;
+}
+#cart-container div img{
+    width: 27%;
+}
+#block-container{
+    background: var(--glass-background);
+    box-shadow: var(--glass-shadow);
+    border-radius: 30px;
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 60% auto 35%;
+    grid-template-areas: "products1 palka1 sum1";
+}
+#cart-container{
+    grid-area: products1;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.vertical-palka{
+    margin-top: 20%;
+    margin-left: 15px;
+    border-radius: 3px;
+    grid-area: palka1;
+    width: 4px;
+    height: 90%;
+    background: var(--header-dark);
+}
+#text-container{
+    grid-area: sum1;
+    padding-bottom: 1vw;
+}
+.clear{
+    display: flex;
+    justify-content: center;
+}
+#productSum,#deliverySum,#Sum{
+    font-size: 20px;
+}
+.horisontal-palka{
+    height: 4px;
+    width: 70%;
+    border-radius: 2px;
+    background: var(--header-dark);
+}
+form{
+    padding-bottom: 2vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 20%;
+
+    border-radius: 20px;
+    background: var(--glass-background);
+}
+label{
+    margin-top: 5%;
+}
+input{
+    border: 0;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background: var(--glass-background);
+}
+button{
+    margin-top: 20px;
+    border: 0;
+    width: 9vw;
+    height: 4vw;
+    border-radius: 10px;
+    background: var(--glass-background);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 9px;
+    color: var(--brown);
+}
+footer{
+    margin-top: 1vw;
+}

@@ -1,0 +1,150 @@
+.container1, .container2,.container3{
+    position: relative;
+}
+.hidden-chocolate{
+    position: absolute;
+    top: 15vw;
+    left:46%;
+    width:10%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+.first img{
+    width: 80%;
+}
+.container1:hover .hidden-chocolate{
+    opacity: 1;
+}
+#hiddenCheckbox{
+    position: absolute;
+    top:55%;
+    left:13%;
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+}
+
+.hidden-question{
+    position: absolute;
+    top: 47%;
+    left:28%;
+    width:10%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#hiddenCheckbox:checked+.hidden-question{
+    opacity: 1;
+}
+#owner{
+    position: absolute;
+    top: 0;
+    left:20%;
+    width: 45%;
+}
+#owner img{
+    width: 100%;
+}
+.text-light{
+    opacity: 0.5;
+}
+
+
+.container-square {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+}
+#hiddenCheckbox2{
+    appearance: none;
+    position:relative ;
+    width: 30vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+#hiddenCheckbox2::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background: var(--header-ligth);
+    box-shadow:  0 0 0 var(--header-dark),
+    0 0 0 #d49e4f,
+    10px 10px 10px var(--header-dark) inset,
+    -10px -10px 10px #d49e4f inset;
+
+
+}
+#hiddenCheckbox2:checked::before{
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes anime {
+    0% {
+        width: 60px;
+        height: 60px;
+        background: var(--header-ligth);
+        box-shadow:  0 0 0 var(--header-dark),
+        0 0 0 #d49e4f,
+        10px 10px 10px var(--header-dark) inset,
+        -10px -10px 10px #d49e4f inset;
+        content: "";
+    }
+    25% {
+        width: 60px;
+        height: 60px;
+        background: #cd9748;
+        box-shadow:  10px 10px 10px var(--header-dark),
+        10px 10px 10px #d49e4f,
+        0 0 0 var(--header-dark) inset,
+        0 0 0 #d49e4f inset;
+        content: "";
+    }
+    50% {
+        width: 60px;
+        height: 17vw;
+        background: #cd9748;
+        box-shadow:  10px 10px 10px var(--header-dark),
+        10px 10px 10px #d49e4f,
+        0 0 0 var(--header-dark) inset,
+        0 0 0 #d49e4f inset;
+        content: "";
+    }
+    100% {
+        width: 22vw;
+        height: 17vw;
+        background: #cf994a;
+        box-shadow:  40px 40px 40px var(--header-dark),
+        0 0 0 #d49e4f,
+        0 0 0 var(--header-dark) inset,
+        2px 2px 2px #d49e4f inset;
+        content: "Закажите сладости";
+        font-size: 2vw;
+        font-family: 'Dela Gothic One', sans-serif;
+        color: var(--brown);
+        left: 50%;
+        text-align: center;
+        line-height: 8vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hidden-chocolate{
+        top:25vw;
+    }
+}
+@media (max-width: 600px) {
+    .hidden-chocolate{
+        top:37vw;
+    }
+}

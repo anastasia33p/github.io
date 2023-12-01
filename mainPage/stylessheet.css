@@ -1,0 +1,117 @@
+
+.container{
+    position: relative;
+    line-height: 140%;
+    height: fit-content;
+}
+.text-container{
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
+
+.card-container {
+    height: 23vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-color: var(--brown) var(--glass-background); /* Цвет ползунка и фона */
+    scrollbar-width: thin;
+}
+.card-container::-webkit-scrollbar {
+    width: 10px; /* Толщина скроллбара */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: var(--glass-shadow); /* Цвет ползунка */
+    border-radius: 5px; /* Радиус закругления углов ползунка */
+}
+
+.card-container::-webkit-scrollbar-track {
+    background-color: var(--glass-background); /* Цвет фона скроллбара */
+}
+.card {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50px;
+    box-shadow: var(--glass-shadow);
+    background: var(--glass-background);
+}
+.back_yellow{
+    position: absolute;
+    width: 100%;
+    bottom: -7vw;
+    z-index: -1;
+}
+.popular{
+    font-size: 30px;
+}
+.slider-container{
+
+}
+
+.slide{
+    line-height: 200%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: ". name1" "image1 text1";
+}
+.slide h2{
+    grid-area: name1;
+    margin-left: 2vw;
+}
+.slide p{
+    margin-top: 100px;
+    grid-area: text1;
+    margin-right: 2vw;
+}
+.slide img{
+    grid-area: image1;
+}
+.button-container{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+}
+.button-container button{
+    width: 50px;
+    height: 50px;
+    background: var(--glass-background);
+    border:0;
+    box-shadow: var(--glass-shadow);
+    border-radius: 25px;
+    margin-right: 2vw;
+}
+.animated-container{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+.animated-container button{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 30px;
+    grid-area: button1;
+    width: 40%;
+    height: 100px;
+    border-radius: 20px;
+    border:0;
+    color:var(--brown);
+    background-color:var(--glass-background) ;
+    box-shadow: var(--glass-shadow);
+}
+.animated-container button:hover{
+    border-radius: 20px;
+    border:0;
+    background-color:rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 768px){
+    .back_yellow img {
+        content: url('../svg/yelow_back_phone.svg'); /* Путь к другой картинке для телефонов */
+    }
+}

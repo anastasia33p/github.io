@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="stylescatalog.css">
+  <link rel="stylesheet" href="../mainstyle.css">
+</head>
+<body>
+<header>
+  <div>
+    <p class="m">M</p>
+    <p>яу</p>
+  </div>
+  <h1>ШОКОТАРИЙ</h1>
+  <section>
+    <a href="../mainPage/mainpage.html">О нас</a>
+    <a href="../historyPage/history.html">История фабрики</a>
+    <a href="../catalogPage/catalog.html">Каталог</a>
+    <a href="../cartPage/cart.html">Корзина</a>
+  </section>
+</header>
+<div class="page">
+  <div class="cat-container">
+    <img class="cat" id="owner" src="../svg/cat_yellow_eyes_brown.svg" alt="cat" width="500">
+  </div>
+
+  <div class="catalog">
+    <h1 id="category-title"></h1>
+    <nav id="category-nav">
+      <ul>
+        <li onclick="changeCategory(1)">Шоколад</li>
+        <li onclick="changeCategory(2)">Пирожные</li>
+        <li onclick="changeCategory(3)">Конфеты</li>
+      </ul>
+    </nav>
+    <div id="items">    </div>
+    <div id="pagination">
+      <span onclick="changePage(-1)">Прыгнуть назад</span>
+      <span onclick="changePage(1)">Прыгнуть вперёд</span>
+    </div>
+  </div>
+</div>
+<footer>
+  <a href="../catalogPage/catalog.html" >Заказать</a>
+  <br> <a href="tel:+79134447478">Позвонить </a>
+  <br> <a href="mailto:anastasiablablabla@gmail.com">Написать</a>
+</footer>
+<script src="scriptcatalog.js"></script>
+</body>
+</html>

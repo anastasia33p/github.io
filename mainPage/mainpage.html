@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../mainPage/stylessheet.css">
+    <link rel="stylesheet" href="../mainstyle.css">
+</head>
+<body>
+<header>
+    <div>
+        <p class="m">M</p>
+        <p>яу</p>
+    </div>
+    <h1>ШОКОТАРИЙ</h1>
+    <section>
+        <a href="../mainPage/mainpage.html">О нас</a>
+        <a href="../historyPage/history.html">История фабрики</a>
+        <a href="../catalogPage/catalog.html">Каталог</a>
+        <a href="../cartPage/cart.html">Корзина</a>
+    </section>
+</header>
+
+<div class="container">
+    <div class="cat-container">
+        <img class="cat" id="owner" src="../svg/cat_green_eyes_orange.svg" alt="cat" width="500">
+    </div>
+    <div class="text-container">
+    <p>Приветствуем вас в "Шокотарии" — удивительной кошачьей шоколадной фабрике,
+        где каждый шоколадный произведен под внимательным взглядом наших кошачьих мастеров. Наши пушистые хозяева вложили свое
+        неповторимое очарование в каждый шоколадный батончик, придавая этим угощениям неповторимый вкус и непревзойденное качество.</p>
+
+    <p>В Шокотарии вас ждут:</p>
+
+    <ul>
+        <li>
+            Мастерство и Тщательность: Неповторимые кошачьи лапы и изысканный вкус гарантируют идеальное качество каждого батончика.
+            <br>
+            <br>
+        </li>
+
+        <li>
+            Эксклюзивные Рецепты: Уникальные вкусовые сочетания, созданные кошачьими гурманами с использованием высококачественных ингредиентов.
+            <br>
+            <br>
+        </li>
+        <li>
+            Энергия и Положительные Вибрации: Кошачья энергия наполняет не только вкус, но и поднимает настроение.
+            <br>
+            <br>
+        </li>
+        <li>
+            Экологическая Ответственность: Использование устойчивых материалов и технологий для сохранения окружающей среды.
+            <br>
+            <br>
+        </li>
+        <li>
+            Умиротворение и Расслабление: В "Шокотарии" вы погружаетесь в уютную атмосферу кошачьего мурчания, наслаждаясь чарующим вкусом шоколада.
+        </li>
+    </ul>
+    <p id ="products" class="popular">Популярные позиции</p>
+        </div>
+
+    <div class="card-container" id="cardContainer">    </div>
+
+
+
+    <div class="slider-container">
+        <div class="slider">
+
+            <div class="slide">
+                <h2>Шоколад</h2>
+                <p>В мире сладостей шоколад - настоящий король.
+                    Этот блестящий десерт так притягивает нас своим сладким магнетизмом, что даже котики не могут устоять перед его волшебством.
+                    От белого шоколада до горького – шоколадные радости не знают границ</p>
+                <img src="../svg/cards/card_choco.svg" alt="Изображение 1" >
+            </div>
+
+            <div class="slide">
+                <h2>Пирожные</h2>
+                <p>Пирожные – это как маленькие тайны сладкости, спрятанные во вкусных оболочках.
+                    Котики, в свою очередь, обожают шалить и открывать ящички с сюрпризами, точно так же, как мы наслаждаемся каждым укусом пирожного.
+                    В итоге получается настоящее волшебство в каждой крошке.</p>
+                <img src="../svg/cards/cart_cake.svg" alt="Изображение 2">
+            </div>
+
+            <div class="slide">
+                <h2>Карамель</h2>
+                <p>Карамель – это как сладкие поцелуи, которые тают во рту, оставляя нам невероятные вкусовые воспоминания.
+                    Даже котики были бы завидны этой умении растворяться в удовольствии!
+                    Сладкие и липкие, как их носики после небольшой "контактной" сессии с карамелью.</p>
+                <img src="../svg/cards/card_caramel.png" alt="Изображение 2" width="512">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="button-container">
+        <button onclick="changeSlide(-1)"><</button>
+        <button onclick="changeSlide(1)">></button>
+    </div>
+    <div class="animated-container">
+        <button>Сделать заказ</button>
+    </div>
+    <div class="back_yellow">
+    <img src="../svg/yelow_back.svg" alt="back">
+</div>
+</div>
+<footer>
+    <a href="#owner" >Владелец</a>
+    <br> <a href="#products" >Продукция</a>
+    <br> <a href="tel:+79134447478">Позвонить </a>
+    <br> <a href="mailto:anastasiablablabla@gmail.com">Написать</a>
+</footer>
+<script src="../mainPage/scripts.js"></script>
+</body>
+</html>
